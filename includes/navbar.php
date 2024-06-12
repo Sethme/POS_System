@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-white shadow">
   <div class="container">
 
-    <a class="navbar-brand" href="#">
-        POS System in PHP MySQL
+    <a class="navbar-brand " href="#">
+      SWIFTSALE(POS)SYSTEM
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
