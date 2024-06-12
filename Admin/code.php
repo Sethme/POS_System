@@ -56,6 +56,16 @@ if(isset($_POST['updateAdmin']))
      $phone = validate($_POST['phone']);
      $is_ban = isset($_POST['is_ban']) == true ? 1:0;
 
+
+     $EmailcheckQuery = "SELECT * FROM admin WHERE email='$email' AND id='$adminID'";
+     $checkResult = mysqli_query($conn, $EmailcheckQuery);
+     if($checkResult){
+          if(mysqli_num_rows($checkResult) > 0){
+               redirect('admins-edit.php?id=' .$adminId, 'Email Already used by another user');
+
+          }
+     }
+     
      if($paassword != ''){
           $hashedPassword = password_hash($paassword, PASSWORD_BCRYPT);
      }else{
